@@ -1,0 +1,20 @@
+header {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  color: blue;
+  font-weight: 900;
+}
