@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.hero div,
+.hero img {
+  width: 50%;
+}
+
+.reverse-box {
+  flex-direction: row-reverse;
+}
