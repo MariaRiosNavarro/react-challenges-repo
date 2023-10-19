@@ -2,14 +2,14 @@ import { useState } from "react";
 import Dark from "./svg/dark";
 import "./Header.css";
 
-const Header = ({ setter }) => {
+const Header = ({ setParentPropierty }) => {
   const [darkmode, setDarkmode] = useState(false);
   console.log(darkmode);
 
   // HERE unten der State die Funktionen
 
   const changeBG = () => {
-    setter((parent) => !parent);
+    setParentPropierty((parent) => !parent);
   };
 
   return (
