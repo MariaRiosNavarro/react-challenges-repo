@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 const Summary = styled.summary`
   &::after {
-    content: " ▼"; /* Ein Pfeil nach unten */
+    content: " ▼";
   }
 
   &::-webkit-details-marker {
-    display: none;
+    visibility: hidden;
   }
 `;
 
 const Details = styled.details`
-  &[open]Summary::after {
-    content: " ▲"; /* Ein Pfeil nach oben */
+  &[open] ${Summary}::after {
+    content: " ▲";
   }
 `;
 
