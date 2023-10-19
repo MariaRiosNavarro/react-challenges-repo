@@ -29,18 +29,31 @@ import { useState } from "react";
 const MainWrapper = styled.article`
   display: flex;
   flex-direction: column;
-  min-height: 200px;
+  min-height: 250px;
   padding: 2rem;
   background-color: gray;
 `;
 
 const WrapperQuestion = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Question = styled.p`
+  font-size: 2rem;
 `;
 
 const Answer = styled.p`
   padding: 1rem;
   min-height: 20px;
+  font-size: 1.5rem;
+`;
+
+const Button = styled.button`
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
 `;
 
 const FAQ = () => {
@@ -50,14 +63,14 @@ const FAQ = () => {
     <>
       <MainWrapper>
         <WrapperQuestion>
-          <p>Why is React Great?</p>
-          <button
+          <Question>Why is React Great?</Question>
+          <Button
             onClick={() => {
               setMessage((message) => !message);
             }}
           >
             {message ? "⬆" : "⬇"}
-          </button>
+          </Button>
         </WrapperQuestion>
         <Answer>{message ? "Fast learning curve" : ""}</Answer>
       </MainWrapper>
