@@ -5,6 +5,11 @@ const Form = styled.form`
   display: flex;
   max-width: 100vw;
   flex-wrap: wrap;
+  padding: 2rem;
+`;
+
+const Wrapper = styled.div`
+  background-color: lightgray;
 `;
 
 const Form1_6 = () => {
@@ -14,34 +19,35 @@ const Form1_6 = () => {
 
   return (
     <>
-      <Form>
-        <input
-          type="text"
-          value={name}
-          onChange={(event) => {
-            setName(event.target.value);
-          }}
-        />
-        <input
-          type="text"
-          value={lastname}
-          onChange={(event) => {
-            setLastname(event.target.value);
-          }}
-        />
-        <input
-          type="email"
-          value={email}
-          onChange={(event) => {
-            setEmail(event.target.value);
-          }}
-        />
-      </Form>
-      <div>
+      <Wrapper>
+        <Form>
+          <input
+            type="text"
+            value={name}
+            onChange={(event) => {
+              setName(event.target.value);
+            }}
+          />
+          <input
+            type="text"
+            value={lastname}
+            onChange={(event) => {
+              setLastname(event.target.value);
+            }}
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(event) => {
+              setEmail(event.target.value);
+            }}
+          />
+        </Form>
+
         <p>Name:{name}</p>
         <p>Nachname:{lastname}</p>
         <p>Email:{email}</p>
-      </div>
+      </Wrapper>
     </>
   );
 };
