@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 const Form = styled.form`
   display: flex;
+  max-width: 100vw;
+  flex-wrap: wrap;
 `;
 
 const Form1_6 = () => {
