@@ -6,6 +6,8 @@ const Header = ({ setter }) => {
   const [darkmode, setDarkmode] = useState(false);
   console.log(darkmode);
 
+  // HERE unten der State die Funktionen
+
   const changeBG = () => {
     setter((parent) => !parent);
   };
@@ -22,7 +24,7 @@ const Header = ({ setter }) => {
         <div onClick={() => setDarkmode((darkmode) => !darkmode)}>
           <Dark />
         </div>
-        <button onClick={changeBG}>CHANGE with Sate in Parent</button>
+        <button onClick={changeBG}>CHANGE with State in Parent</button>
       </header>
     </>
   );
