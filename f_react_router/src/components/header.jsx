@@ -1,4 +1,4 @@
-import { Link, LinkNav, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // mit navLink kriegen von der Tag en active wenn es selektiert ist,
 // und können damit styles geben, was Link nicht her gibt. diese Klasse kann man nicht ändern
