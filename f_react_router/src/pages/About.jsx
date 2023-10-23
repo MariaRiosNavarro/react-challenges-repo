@@ -1,5 +1,12 @@
+import Header from "../components/header";
+
 const About = () => {
-  return <h1>About</h1>;
+  return (
+    <>
+      <Header></Header>
+      <h1>About</h1>;
+    </>
+  );
 };
 
 export default About;
