@@ -1,0 +1,18 @@
+:root {
+  --color: rgba(0, 128, 92, 0.719);
+  --light: rgba(108, 219, 188, 0.719);
+  --nav-bg: rgb(234, 185, 133);
+  --border-color: rgb(212, 85, 85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: var(--color);
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+}

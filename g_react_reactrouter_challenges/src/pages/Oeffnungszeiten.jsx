@@ -1,7 +1,10 @@
+import Navigation from "../components/Navigation";
+
 const Oeffnungszeiten = () => {
   return (
     <>
-      <h1>Oeffnungszeiten</h1>
+      <Navigation />
+      <h1>Öffnungszeiten</h1>
     </>
   );
 };
