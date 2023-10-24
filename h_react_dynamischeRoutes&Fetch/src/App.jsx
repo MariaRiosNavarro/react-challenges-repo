@@ -1,12 +1,10 @@
 import "./App.css";
-import Contact from "../pages/contact";
-import Home from "../pages/home";
-import About from "../pages/about";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Detail from "../pages/Detail";
 import Header from "../components/Header";
 import UseEffect from "../pages/UseEffect";
 import Fetch from "../pages/Fetch";
+import DynamicalRouter from "../pages/DynamicalRoutes";
 
 function App() {
   return (
@@ -16,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<UseEffect />} />
           <Route path="/fetch" element={<Fetch />} />
-          <Route path="/detail" element={<Detail />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/dynamic" element={<DynamicalRouter />} />
+          {/* here  dynamic*/}
+          <Route path="/dynamic/:idName" element={<Detail />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "birthday": "1990-01-01",
+    "gender": "Male",
+    "img": "https://example.com/johndoe.jpg",
+    "hobbys": "Reading, hiking",
+    "age": 30
+  },
+  {
+    "id": 2,
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "birthday": "1985-05-10",
+    "gender": "Female",
+    "img": "https://example.com/janesmith.jpg",
+    "hobbys": "Painting, swimming",
+    "age": 35
+  },
+  {
+    "id": 3,
+    "firstName": "Michael",
+    "lastName": "Johnson",
+    "birthday": "1995-09-15",
+    "gender": "Male",
+    "img": "https://example.com/michaeljohnson.jpg",
+    "hobbys": "Playing guitar, cooking",
+    "age": 25
+  },
+  {
+    "id": 4,
+    "firstName": "Emily",
+    "lastName": "Davis",
+    "birthday": "1992-03-20",
+    "gender": "Female",
+    "img": "https://example.com/emilydavis.jpg",
+    "hobbys": "Photography, dancing",
+    "age": 28
+  },
+  {
+    "id": 5,
+    "firstName": "Daniel",
+    "lastName": "Wilson",
+    "birthday": "1988-11-05",
+    "gender": "Male",
+    "img": "https://example.com/danielwilson.jpg",
+    "hobbys": "Skiing, playing chess",
+    "age": 32
+  },
+  {
+    "id": 6,
+    "firstName": "Sophia",
+    "lastName": "Martinez",
+    "birthday": "1997-07-12",
+    "gender": "Female",
+    "img": "https://example.com/sophiamartinez.jpg",
+    "hobbys": "Traveling, yoga",
+    "age": 23
+  },
+  {
+    "id": 7,
+    "firstName": "Oliver",
+    "lastName": "Anderson",
+    "birthday": "1993-04-25",
+    "gender": "Male",
+    "img": "https://example.com/oliveranderson.jpg",
+    "hobbys": "Gardening, playing video games",
+    "age": 27
+  },
+  {
+    "id": 8,
+    "firstName": "Isabella",
+    "lastName": "Thomas",
+    "birthday": "1987-08-30",
+    "gender": "Female",
+    "img": "https://example.com/isabellathomas.jpg",
+    "hobbys": "Writing, cycling",
+    "age": 33
+  },
+  {
+    "id": 9,
+    "firstName": "Ethan",
+    "lastName": "Hernandez",
+    "birthday": "1991-02-15",
+    "gender": "Male",
+    "img": "https://example.com/ethanhernandez.jpg",
+    "hobbys": "Fishing, hiking",
+    "age": 29
+  },
+  {
+    "id": 10,
+    "firstName": "Mia",
+    "lastName": "Lopez",
+    "birthday": "1996-06-08",
+    "gender": "Female",
+    "img": "https://example.com/mialopez.jpg",
+    "hobbys": "Singing, playing basketball",
+    "age": 24
+  },
+  {
+    "id": 11,
+    "firstName": "Aiden",
+    "lastName": "Gonzalez",
+    "birthday": "1994-12-18",
+    "gender": "Male",
+    "img": "https://example.com/aidengonzalez.jpg",
+    "hobbys": "Painting, playing piano",
+    "age": 26
+  },
+  {
+    "id": 12,
+    "firstName": "Charlotte",
+    "lastName": "Lee",
+    "birthday": "1989-10-03",
+    "gender": "Female",
+    "img": "https://example.com/charlottelee.jpg",
+    "hobbys": "Cooking, hiking",
+    "age": 31
+  },
+  {
+    "id": 13,
+    "firstName": "Lucas",
+    "lastName": "Perez",
+    "birthday": "1998-09-05",
+    "gender": "Male",
+    "img": "https://example.com/lucasperez.jpg",
+    "hobbys": "Photography, playing football",
+    "age": 22
+  },
+  {
+    "id": 14,
+    "firstName": "Amelia",
+    "lastName": "Harris",
+    "birthday": "1992-07-17",
+    "gender": "Female",
+    "img": "https://example.com/ameliaharris.jpg",
+    "hobbys": "Reading, swimming",
+    "age": 28
+  },
+  {
+    "id": 15,
+    "firstName": "Liam",
+    "lastName": "Clark",
+    "birthday": "1986-03-12",
+    "gender": "Male",
+    "img": "https://example.com/liamclark.jpg",
+    "hobbys": "Playing guitar, cooking",
+    "age": 34
+  },
+  {
+    "id": 16,
+    "firstName": "Evelyn",
+    "lastName": "Young",
+    "birthday": "1997-05-28",
+    "gender": "Female",
+    "img": "https://example.com/evelynyoung.jpg",
+    "hobbys": "Painting, dancing",
+    "age": 23
+  }
+]
