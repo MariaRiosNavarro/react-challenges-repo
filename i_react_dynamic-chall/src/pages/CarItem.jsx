@@ -1,37 +1,27 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-// import "./CarItem.css";
+import { useParams } from "react-router-dom";
+import data from "../data/data.json";
+import "./CarItem.css";
 
-const CarItem = (props) => {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    console.log(count);
-  }, [count]);
+const CarItem = () => {
+  const { carId } = useParams();
+
+  const car = data.find((item) => item.id == Number(carId));
+
+  console.log(car);
 
   return (
     <>
-      <h1>Component</h1>
       <section>
-        <article>
-          <h2>{props.property}</h2>
-          <button
-            onClick={() => {
-              setCount(count + 1);
-            }}
-          >
-            click +1
-          </button>
-          <p>{count}</p>
-          <Link>See More</Link>
+        <article className="card-detail">
+          <h1>{car.carModel}</h1>
+          <h2>{car.CarMake}</h2>
+          <h3>{car.CarYear}</h3>
+          <Link to="/">Back</Link>
         </article>
       </section>
     </>
   );
-};
-
-CarItem.propTypes = {
-  property: PropTypes.string,
 };
 
 export default CarItem;
