@@ -49,6 +49,8 @@ const Detail = () => {
     return user.id === Number(idName);
   });
 
+  // mit find kriegen nur ein object, also brauchen kein [0]
+
   console.log(detailuser);
 
   if (!detailuser) {
