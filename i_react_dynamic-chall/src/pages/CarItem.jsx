@@ -8,8 +8,6 @@ const CarItem = () => {
 
   const car = data.find((item) => item.id == Number(carId));
 
-  console.log(car);
-
   return (
     <>
       <section>
