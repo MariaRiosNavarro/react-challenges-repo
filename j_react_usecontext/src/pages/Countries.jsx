@@ -1,30 +1,28 @@
-// import { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
-// import './Countries.css';
+import Header from "../components/Header";
+import { useContext } from "react";
+import { FetchContext } from "../Context/Context";
 
 const Countries = () => {
-  //     const [count, setCount] = useState(0);
-  //     useEffect(() => {
-  //         console.log(count);
-  // }, [count]);
+  const { countries } = useContext(FetchContext);
 
+  console.log("Wir sind auf der Coutrie Seite", countries);
   return (
-    <>
+    <section>
+      <Header />
       <h1>Countries</h1>
-      {/* <section>
-                    <article>
-                        <h2>{props.property}</h2>
-                        <button onClick={() => {setCount(count + 1);}}>click +1</button>
-                        <p>{count}</p>
-                        <Link to='/'>See More</Link>
-                    </article>
-                </section> */}
-    </>
+      <section className="coutries">
+        {countries?.map((item, index) => (
+          <div key={index}>
+            <img src={item.flags.svg} alt="flagge" />
+            <h3>{item.altSpellings[1]}</h3>
+            <hr />
+            <p>Population: {item.population}</p>
+            <p>Region: {item.region}</p>
+          </div>
+        ))}
+      </section>
+    </section>
   );
 };
-
-// Countries.propTypes = {
-// property: PropTypes.string };
 
 export default Countries;

@@ -1,0 +1,22 @@
+header,
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header svg {
+  height: 30px;
+  cursor: pointer;
+}
+
+header svg:hover {
+  fill: blue;
+}
+header a {
+  padding: 5px 10px;
+}
+
+header {
+  margin-bottom: 60px;
+}

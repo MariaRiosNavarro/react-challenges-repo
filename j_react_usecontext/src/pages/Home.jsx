@@ -1,37 +1,18 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-// import PropTypes from "prop-types";
-// import "./Home.css";
+import Header from "../components/Header";
 
 const Home = () => {
-  //   const [count, setCount] = useState(0);
-  //   useEffect(() => {
-  //     console.log(count);
-  //   }, [count]);
-
   return (
-    <>
-      <h1>Home</h1>
-      <section>
-        {/* <article>
-          <h2>{props.property}</h2>
-          <button
-            onClick={() => {
-              setCount(count + 1);
-            }}
-          >
-            click +1
-          </button>
-          <p>{count}</p>
-          <Link to="/">See More</Link> */}
-        {/* </article> */}
-      </section>
-    </>
+    <section>
+      <Header />
+      <h1> HOME</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+        sit provident libero laboriosam aliquid fugit repellendus distinctio
+        quod eos. Corporis, explicabo dolorem quia quasi porro delectus itaque
+        odit repudiandae qui.
+      </p>
+    </section>
   );
 };
-
-// Home.propTypes = {
-//   property: PropTypes.string,
-// };
 
 export default Home;

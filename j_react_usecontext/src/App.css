@@ -1,0 +1,26 @@
+.dark {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  min-height: 100vh;
+}
+
+.dark a {
+  color: white;
+}
+.dark svg {
+  fill: white;
+}
+
+* {
+  margin: 0;
+}
+
+.coutries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+}
+
+img {
+  max-width: 100%;
+}

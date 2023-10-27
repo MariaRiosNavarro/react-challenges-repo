@@ -3,11 +3,18 @@ import { NavLink } from "react-router-dom";
 // import PropTypes from 'prop-types';
 // import "./Header.css";
 
+import { useContext } from "react";
+
 const Header = () => {
   //     const [count, setCount] = useState(0);
   //     useEffect(() => {
   //         console.log(count);
   // }, [count]);
+  const { theme, setTheme } = useContext();
+  const toggleTheme = () => {
+    setTheme((value) => !value);
+    console.log(theme);
+  };
 
   return (
     <>
@@ -17,7 +24,7 @@ const Header = () => {
         <NavLink to="/about">about</NavLink>
         <NavLink to="/countries">countries</NavLink>
       </nav>
-      <button>Dark/Night</button>
+      <button onClick={toggleTheme}>Dark/Night</button>
       <article></article>
     </>
   );
