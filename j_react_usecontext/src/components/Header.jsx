@@ -1,37 +1,33 @@
-// import { useState, useEffect } from 'react';
+import "./Header.css";
 import { NavLink } from "react-router-dom";
-// import PropTypes from 'prop-types';
-// import "./Header.css";
+import DarkLight from "../assets/dark-light";
 
+// Müssen für Context Importieren
 import { useContext } from "react";
+import { ThemeContext } from "../Context/Context";
 
 const Header = () => {
-  //     const [count, setCount] = useState(0);
-  //     useEffect(() => {
-  //         console.log(count);
-  // }, [count]);
-  const { theme, setTheme } = useContext();
+  const { setTheme } = useContext(ThemeContext);
+
   const toggleTheme = () => {
-    setTheme((value) => !value);
-    console.log(theme);
+    setTheme((pizza) => !pizza);
   };
 
   return (
-    <>
+    <header>
       <h1>Logo</h1>
-      <nav>
-        <NavLink to="/">home</NavLink>
-        <NavLink to="/about">about</NavLink>
-        <NavLink to="/countries">countries</NavLink>
-      </nav>
-      <button onClick={toggleTheme}>Dark/Night</button>
-      <article></article>
-    </>
+      <div>
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/countries">Countries</NavLink>
+        </nav>
+        <div onClick={toggleTheme}>
+          <DarkLight />
+        </div>
+      </div>
+    </header>
   );
 };
-
-// Header.propTypes = {
-//   property: PropTypes.string,
-// };
 
 export default Header;

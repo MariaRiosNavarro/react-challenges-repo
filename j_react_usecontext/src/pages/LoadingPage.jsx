@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { LoadingContext } from "../Context/Context";
-import FetchData from "../components/FetchData";
+// import FetchData from "../components/FetchData";
 
 const LoadingPage = () => {
   const { setLoading } = useContext(LoadingContext);
