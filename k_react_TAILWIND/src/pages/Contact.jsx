@@ -1,16 +1,16 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Contact = () => {
   return (
     <>
       <Header />
       <div>
-        <h3>Home</h3>
+        <h3>Contact</h3>
       </div>
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Contact;
