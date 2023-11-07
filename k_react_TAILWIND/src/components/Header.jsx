@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div>
+    <div className="bg-red-900 flex justify-center text-white">
       <h3>Header</h3>
     </div>
   );
